@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="firstContainer">
+    <div class="leftSection">
+        <div class="UpperSection">
+            <div class="box">
+                UPPER SECTION
+            </div>
+            <div class="box">
+                HOW TO SCORE
+            </div>
+            <div class="box">
+                <p class="inBox">PLAYER 1#</p>
+            </div>
+            <div class="box">
+                Aces - 1
+            </div>
+            <div class="box">
+                <p class="inBox">Count and Add Only Aces</p>
+            </div>
+            <div class="box pointsBlock">
+               <span class="onePoints"></span>
+            </div>
+            <div class="box">
+                Twos - 2
+            </div>
+            <div class="box">
+                <p class="inBox">Count and Add Only Twos</p>
+            </div>
+            <div class="box pointsBlock">
+                <span class="twoPoints"></span>
+            </div>
+            <div class="box">
+                Threes - 3
+            </div>
+            <div class="box">
+                <div class="inBox">Count and Add Only Threes</div>
+            </div>
+            <div class="box pointsBlock">
+                <span class="threePoints"></span>
+            </div>
+            <div class="box">
+                Fours - 4
+            </div>
+            <div class="box">
+                <p class="inBox">Count and Add Only Fours</p>
+            </div>
+            <div class="box pointsBlock">
+                <span class="fourPoints"></span></div>
+            <div class="box">
+                Fives - 5
+            </div>
+            <div class="box">
+                <p class="inBox">Count and Add Only Fives</p>
+            </div>
+            <div class="box pointsBlock">
+                <span class="fivePoints"></span></div>
+            <div class="box">
+                Sixes - 6
+            </div>
+            <div class="box">
+                <p class="inBox">Count and Add Only Sixes</p>
+            </div>
+            <div class="box pointsBlock">
+                <span class="sixPoints"></span></div>
+            <div class="box">
+                Total Score
+            </div>
+            <div class="box">
+                =
+            </div>
+            <div class="box">
+                <span class="upTotal"></span>
+            </div>
+            <div class="box">
+                BONUS
+            </div>
+            <div class="box">
+                <p class="inBox">If total score is 63 or over</p>
+            </div>
+            <div class="box">
+                <span class="bonus"></span>
+            </div>
+            <div class="box">TOTAL</div>
+            <div class="box">
+                <p class="inBox">Of Upper Section</p>
+            </div>
+            <div class="box">
+                <span class="totalBonus"></span>
+            </div>
+        </div>
+        <div class="LowerSection">
+            <div class="box">3 of a Kind</div>
+            <div class="box">
+                <p class="inBox">Add total of all dice</p>
+            </div>
+            <div class="box threeOfKind lowerPoints">
+                <span class="threeOfKindPoints"></span>
+            </div>
+            <div class="box">
+                4 of a Kind
+            </div>
+            <div class="box">
+                <p class="inBox">Add total of all dice</p>
+            </div>
+            <div class="box fourOfKind lowerPoints">
+            <span class="fourOfKindPoints"></span>
+            </div>
+            <div class="box">
+                Full House
+            </div>
+            <div class="box">
+                Score 25
+            </div>
+            <div class="box fullHouse lowerPoints">
+                <span class="fullHousePoints"></span>
+            </div>
+            <div class="box">
+                Sm. Straight
+            </div>
+            <div class="box">
+                Score 30
+            </div>
+            <div class="box smallStraight lowerPoints">
+                <span class="sSPoints"></span>
+            </div>
+            <div class="box">
+                Lg. Straight
+            </div>
+            <div class="box">
+                Score 40
+            </div>
+            <div class="box largeStraight lowerPoints">
+                <span class="lSPoints"></span>
+            </div>
+            <div class="box">
+                Yahtzee
+            </div>
+            <div class="box">
+                Score 50
+            </div>
+            <div class="box yahtzee lowerPoints">
+                <span class="yahtzeePoints"></span>
+            </div>
+            <div class="box">
+                Chance
+            </div>
+            <div class="box">
+                <p class="inBox">Add Total of all Dice</p>
+            </div>
+            <div class="box chance lowerPoints">
+                <span class="chancePoints"></span>
+            </div>
+            <div class="box">
+                Total
+            </div>
+            <div class="box">
+                <p class="inBox">Of Lower Section</p>
+            </div>
+            <div class="box lowwwSection">
+                <span class="lower-total"></span>
+            </div>
+            <div class="box">
+                Total
+            </div>
+            <div class="box">
+                <p class="inBox">Of Upper Section</p>
+            </div>
+            <div class="box underUpTotal">
+                <span class="totalBonusA"></span>
+            </div>
+            <div class="box">Grand Total</div>
+            <div class="box">
+                <p class="inBox">Up. Section + Lo. Section</p>
+            </div>
+            <div class="box">
+                <span class="fullScore"></span>
+            </div>
+        </div>
+    </div>
+    <div class="diceBoard">
+        <div class="diceContainer">
+            <img class="dice dice-1" src="/img/01stip.PNG" alt="">
+            <img class="dice dice-2" src="/img/02stip.PNG" alt="">
+            <img class="dice dice-3" src="/img/03stip.PNG" alt="">
+            <img class="dice dice-4" src="/img/04stip.PNG" alt="">
+            <img class="dice dice-5" src="/img/05stip.PNG" alt="">
+        </div>
+        <button onclick="roll()" class="roll">Roll</button>
+        <h1 class="textRolls">Rolls left: <span class="totalRolls"></span></h1>
+    </div>
+</div>
+<div class="extended-background"></div>
+</body>
+</html>
+
+<script src="script.js"></script>

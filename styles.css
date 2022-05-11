@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.firstContainer {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#ecf0f145, #bdc3c73f) ,url(/img/background.jpg);
+    background-size: cover;
+    
+}
+
+.leftSection {
+    position: absolute;
+    width: 280px;
+    height: 95vh;
+    border: 3px solid black;
+    transform: translate(0,-50%);
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.inBox {
+    font-size: 10px;
+}
+
+.UpperSection {
+    height: 50%;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 3fr 2fr 1fr;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.LowerSection {
+    height: 50%;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: 3fr 2fr 1fr;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.diceBoard {
+    position: absolute;
+    width: 280px;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 79%;
+    border: 2px solid black;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+@media only screen and (max-width: 600px) {
+    .diceBoard {
+    transform: translate(0%, 0%);
+    top: 105%;
+    left: 0%;
+    }   
+}
+
+.diceContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    height: 50px;
+    width: auto;
+}
+
+.textRolls {
+    font-size: 16px;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.roll {
+    display: flex;
+    align-self: center;
+    width: 20%;
+    justify-content: center;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+.selected {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+    border-radius: 6px;
+}
+
+
+.checked {
+    color: white;
+    background-color: lightblue !important;
+}
+
+.extended-background {
+    background-color: lightblue;
+    width: 100vw;
+    height: 50vh;
+}
