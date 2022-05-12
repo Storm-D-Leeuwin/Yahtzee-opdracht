@@ -1,5 +1,13 @@
 'use strict';
 
+document.querySelector('.endGame').addEventListener('click', () => {
+    resetGame();
+})
+
+document.querySelector(".playBtn").addEventListener('click', function () {
+    startGame();
+})
+
 let rollsLeft = 3;
 let dicesHold = [false, false, false, false, false];
 
@@ -490,4 +498,55 @@ let lowerPointsCheck = () => {
 let endGameCheck = () => {
     fullScore = threeOfKinds + fourOfKinds + fullHouse + smallStraight + largeStraight + yahtzees + chances + ones + twos + threes + fours + fives + sixes + bonus;
     document.querySelector('.fullScore').textContent = fullScore;
+}
+
+let startGame = () => {
+    document.querySelector('.firstContainer').classList.remove('hidden');
+    document.querySelector('.extended-background').classList.remove('hidden');
+    document.querySelector('.playBtn').classList.add('hidden');
+    document.querySelector('.playBackground').classList.add('hidden');
+}
+
+let resetGame = () => {
+rollsLeft = 3;
+dicesHold = [false, false, false, false, false];
+currentDices = [1,1,1,1,1];
+ones = 0;
+twos = 0;
+threes = 0;
+fours = 0;
+fives = 0;
+sixes = 0;
+threeOfKinds = 0;
+fourOfKinds = 0;
+yahtzees = 0;
+chances = 0;
+smallStraight = 0;
+largeStraight = 0;
+fullHouse = 0;
+
+upScoreNoBonus = 0;
+document.querySelector('.upTotal').textContent = '';
+
+bonus = 0;
+document.querySelector('.bonus').textContent = '';
+
+upScorePlusBonus = 0;
+document.querySelector('.totalBonus').textContent = '';
+document.querySelector('.totalBonusA').textContent = '';
+
+lowerScore = 0;
+document.querySelector('.lower-total').textContent = '';
+
+fullScore = 0;
+document.querySelector('.fullScore').textContent = '';
+
+
+oneToSixClicked = [false, false, false, false, false, false];
+
+rounds = 0;
+
+document.querySelectorAll('.box').forEach((box) => {
+    box.classList.remove('checked');
+})
 }
