@@ -106,7 +106,7 @@ function roll () {
         pointsBlockClick();
         lowerPointsCheck();
         
-        if (rounds == 14) {
+        if (rounds == 13) {
         endGameCheck();
         }
     }
