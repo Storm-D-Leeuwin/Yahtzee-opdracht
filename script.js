@@ -476,7 +476,7 @@ function fullHouseChecker () {
         fullHouse = 25;
         document.querySelector('.fullHousePoints').textContent = fullHouse;
     } else {
-        document.querySelector('.fullHousePoints').textContent = fullHouse;
+        
     }
 }
 
