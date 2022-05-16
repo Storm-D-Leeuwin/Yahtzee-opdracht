@@ -474,6 +474,7 @@ function fullHouseChecker () {
 
     if (threeOfKindYes && twoOfKindYes) {
         fullHouse = 25;
+        document.querySelector('.fullHousePoints').textContent = fullHouse;
     }
 
     document.querySelector('.fullHousePoints').textContent = fullHouse;
