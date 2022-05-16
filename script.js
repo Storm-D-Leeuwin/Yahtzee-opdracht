@@ -547,7 +547,7 @@ largeStraight = 0;
 document.querySelector('.lSPoints').textContent = '';
 
 fullHouse = 0;
-
+document.querySelector('.fullHousePoints').textContent = '';
 
 document.querySelector('.totalRolls').textContent = rollsLeft; 
 
