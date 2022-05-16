@@ -431,6 +431,8 @@ function largeStraightCheck () {
 function fullHouseChecker () {
     let fh = document.querySelector(".fullHouse");
 
+    fullHouse = 0;
+
     fh.addEventListener("click", () => {
         if (rollsLeft < 3 && !fh.classList.contains("checked")) {
             fh.classList.add("checked");
@@ -438,8 +440,6 @@ function fullHouseChecker () {
         }
        
     })
-    
-    fullHouse = 0;
     
     let threeOfKindYes = false;
     let twoOfKindYes = false;
