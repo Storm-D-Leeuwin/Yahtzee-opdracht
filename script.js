@@ -225,7 +225,7 @@ function oneToSixCheck() {
 
         }
 
-        document.querySelector(".onePoints").textContent = ones;
+       document.querySelector(".onePoints").textContent = ones;
        document.querySelector(".twoPoints").textContent = twos;
        document.querySelector(".threePoints").textContent = threes;
        document.querySelector(".fourPoints").textContent = fours;
@@ -517,13 +517,34 @@ threes = 0;
 fours = 0;
 fives = 0;
 sixes = 0;
+
+document.querySelector(".onePoints").textContent = '';
+document.querySelector(".twoPoints").textContent = '';
+document.querySelector(".threePoints").textContent = '';
+document.querySelector(".fourPoints").textContent = '';
+document.querySelector(".fivePoints").textContent = '';
+document.querySelector(".sixPoints").textContent = '';
+
 threeOfKinds = 0;
+document.querySelector(".threeOfKindPoints").textContent = '';
+
 fourOfKinds = 0;
+document.querySelector(".fourOfKindPoints").textContent = '';
+
 yahtzees = 0;
+document.querySelector(".yahtzeePoints").textContent = '';
+
 chances = 0;
+document.querySelector(".chancePoints").textContent = '';
+
 smallStraight = 0;
+document.querySelector('.sSPoints').textContent = '';
+
 largeStraight = 0;
+document.querySelector('.lSPoints').textContent = '';
+
 fullHouse = 0;
+document.querySelector('.fullHousePoints').textContent = '';
 
 document.querySelector('.totalRolls').textContent = rollsLeft; 
 
