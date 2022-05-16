@@ -525,6 +525,8 @@ smallStraight = 0;
 largeStraight = 0;
 fullHouse = 0;
 
+document.querySelector('.totalRolls').textContent = rollsLeft; 
+
 upScoreNoBonus = 0;
 document.querySelector('.upTotal').textContent = '';
 
