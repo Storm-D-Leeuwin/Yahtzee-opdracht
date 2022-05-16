@@ -546,7 +546,7 @@ document.querySelector('.lSPoints').textContent = '';
 fullHouse = 0;
 document.querySelector('.fullHousePoints').textContent = '';
 
-document.querySelector('.totalRolls').textContent = rollsLeft; 
+document.querySelector('.totalRolls').textContent = 3; 
 
 upScoreNoBonus = 0;
 document.querySelector('.upTotal').textContent = '';
